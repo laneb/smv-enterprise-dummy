@@ -24,6 +24,6 @@ class EmploymentByState(SmvModule, SmvOutput):
 
     def run(self, i):
         df = i[inputdata.Employment]
-        return df.groupBy(col("ST")).agg(sum(col("EMP")).alias("GHI"))
+        return df.groupBy(col("ST")).agg(sum(col("EMP")).alias("LMN"))
     def isEphemeral(self):
         return False
